@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+
+    <script type="text/javascript">
+        //alert('oi');
+        //console.log('oi');
+
+        function minhaFuncao() {
+            console.log('enviando...');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>
+            <a class="link-rodape" href="http://ifms.edu.br" href="#" target="_blank">
+                <img src="imagens/logo if verde.jpg" />
+            </a>
+        </h1>
+        <h2 class="h2_ctt">Contato</h2>
+
+        <div class="menu-div">
+            <nav class="menu2">
+                <ul>
+                    <li class="menu"><a class="link" href="agrotoxicos.html">Página Inicial</a>
+                    </li>
+                    <li class="menu"><a class="link" href="quem_somos.html"> Quem Somos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main >
+        <form class="formulario" action="ArquivoDeDados" method="POST">
+            <label for="nomesobrenome">Nome e Sobrenome </label>
+            <input class="input-padrao" type="text" id="nomesobrenome" maxlength="10" required />
+            <label for="email">E-mail </label>
+            <input class="input-padrao" type="email" id="email" placeholder="seuemail@dominio.com" required />
+
+            <label for="mensagem">Mensagem </label>
+            <textarea class="campoMensagem" cols="50" rows="10" id="mensagem" required></textarea>
+
+            <input type="submit" value="Enviar" class="enviar" onclick="minhaFuncao()"/>
+        </form>
+
+
+    </main>
+
+    <footer class="rodape">
+        &copy; Aline Hirokawa, Ana Barbosa, Hellen Alves - 2021
+    </footer>
+</body>
+</html>
